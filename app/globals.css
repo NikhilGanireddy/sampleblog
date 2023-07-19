@@ -5,3 +5,16 @@
 body{
     @apply bg-black text-gray-300 font-medium box-border m-0 p-0
 }
+
+body::-webkit-scrollbar{
+    @apply w-2
+}
+
+body::-webkit-scrollbar-track {
+
+    @apply bg-transparent  rounded-3xl my-12
+}
+
+body::-webkit-scrollbar-thumb{
+    @apply bg-gradient-to-b from-violet-600 to-black rounded-3xl
+}

@@ -6,12 +6,12 @@ import NikhilGanireddy from "../../public/Nikhil_Ganireddy.jpg"
 import {IoClose} from "react-icons/io5";
 
 const Navbar = () => {
-    const [loggedIn, setLoggedIn] = useState(false)
+    const [loggedIn, setLoggedIn] = useState(true)
     const [showDropDown, setShowDropDown] = useState(false)
     const handleOpenDropDown = () => setShowDropDown(true)
     const handleCloseDropDown = () => setShowDropDown(false)
     return <div className="sticky top-0 z-50 bg-black/20 backdrop-blur-2xl py-6 flex justify-between items-center ">
-        <h1 className="text-4xl font-normal text-violet-600">
+        <h1 className="text-2xl font-normal text-violet-600">
             <Link href={"/"}>thegdp</Link>
         </h1>
         <ul>
@@ -44,12 +44,12 @@ const Navbar = () => {
                 </li>
             </div>) : (<div className="flex justify-center items-center gap-4">
                 <Link
-                    className="px-6 py-3 rounded-lg border-neutral-500 bg-transparent border font-normal text-lg"
+                    className="px-6 py-2 rounded-lg border-neutral-500 bg-transparent border font-normal "
                     href={"/login"}
                 >Login</Link>
                 <Link
                     href={"/register"}
-                    className=" px-6 py-3 rounded-lg border-violet-600 bg-violet-600 font-normal text-lg"
+                    className=" px-6 py-2 rounded-lg border-violet-600 bg-violet-600 font-normal "
                 >Register</Link>
 
             </div>)}
