@@ -25,7 +25,7 @@ const Navbar = () => {
                            onClick={handleOpenDropDown}
                     />
                     {showDropDown && <div
-                        className="min-w-[150px] flex items-start text-white transition-all duration-200 absolute top-full mt-2 gap-1 rounded-lg text-sm z-20 bg-white/20 backdrop-blur-sm flex-col overflow-hidden">
+                        className="min-w-[250px] flex items-start text-white transition-all duration-200 absolute top-full mt-2 gap-1 rounded-lg text-sm z-20 bg-black border border-neutral-500 backdrop-blur-md flex-col overflow-hidden">
                         <div onClick={handleCloseDropDown}
                              className="w-full cursor-pointer py-2 px-4 hover:bg-white/10 duration-200 transition-all font-light flex justify-between items-center gap-2 ">
                             <span>Close </span>
